@@ -59,7 +59,7 @@ Fixes #82
   * The scope should be where the change took place.
   * Examples: users, core, config, articles
 * Subject:
-  * The subject line should be clear and consice as to what is being accomplished in the commit.
+  * The subject line should be clear and concise as to what is being accomplished in the commit.
 * General Rules:
   * No Line in the Commit message can be longer than 80 characters.
 * Refrence: [Angular Conventions](https://github.com/ajoslin/conventional-changelog/blob/master/conventions/angular.md)
@@ -82,4 +82,4 @@ The code for the documentation and the website are located in the meanjs/mean re
 
 For those who will be generating releases:
 * Don't forget to update the changelog!
-  * `conventional-changelog -r 1`
+  * `conventional-changelog -r 1 | cat - CHANGELOG.md | tee CHANGELOG.md`
